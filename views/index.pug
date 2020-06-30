@@ -1,0 +1,65 @@
+
+doctype html
+html
+  head
+    title Akanksha Dance Academy
+    style
+     include ../static/style.css
+     //- By default it search files under view where pug template is created hence ../ means we are one state outside that view file
+  body
+    nav#navbar
+        ul
+          div#logo
+            img(src="/static/img/logo1.jpg")
+            | ADA
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Services]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Contact Us]
+    //-  | this
+    //-  we are using this as a object here hence including pipe along with it
+    section#introSection
+        div Welcome to Akanksha's Dance Academy!!
+        div.small Eat , Sleep , Dance ,Repeat!!
+
+    section#missionSection
+        h2 Our Mission  
+        div.card  
+            h3 Dance perfection
+            div.card-box
+               div.card-img
+                   img(src="/static/img/image1.png")
+               div.card-content     
+                       p This is the best dance academy of the universe. 
+        div.card  
+              h3 Dance the way you like
+              div.card-box
+               div.card-img
+                   img(src="/static/img/image2.jpg")
+               div.card-content     
+                       p This is the best dance academy of the universe. 
+             
+        div.card  
+              h3 Expert teaching
+              div.card-box
+               div.card-img
+                   img(src="/static/img/images3.png")
+               div.card-content     
+                       p This is the best dance academy of the universe. 
+              
+
+    section#sponsorsSection
+       h2 Our Sponsors
+       div#sponsors
+          img(src="/static/img/logo1.webp" alt="sponsors image" class="spimage")
+          img(src="/static/img/logo2.webp" alt="sponsors image" class="spimage")
+          img(src="/static/img/logo3.webp" alt="sponsors image" class="spimage")
+          img(src="/static/img/logo4.webp" alt="sponsors image" class="spimage")
+
+    footer#footer
+       | Copywrite@2020 Akanksha-Dance-Academy.Com | All rights are reserved.
+
+        
+    script
+      include ../static/index.js

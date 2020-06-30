@@ -1,0 +1,52 @@
+//- This page fill up the contents of the framework we created in base.pug file
+//- Extend here means we are filling the contents here of the framework we created in other page
+extends base.pug
+
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+   style
+     include ../static/style.css
+
+
+block content
+    section#introSection
+        div Welcome to Akanksha's Dance Academy!!
+        div.small
+        |   Eat , Sleep , Dance, Repeat!!
+
+    section#missionSection
+        h2 Our Mission  
+        div.card  
+            h3 Dance perfection
+            div.card-box
+               div.card-img
+                   img(src="/static/img/image1.png")
+               div.card-content     
+                       p This is the best dance academy of the universe. 
+        div.card  
+              h3 Dance the way you like
+              div.card-box
+               div.card-img
+                   img(src="/static/img/image2.jpg")
+               div.card-content     
+                       p This is the best dance academy of the universe. 
+             
+        div.card  
+              h3 Expert teaching
+              div.card-box
+               div.card-img
+                   img(src="/static/img/images3.png")
+               div.card-content     
+                       p This is the best dance academy of the universe. 
+              
+
+    section#sponsorsSection
+       h2 Our Sponsors
+       div#sponsors
+          img(src="/static/img/logo1.webp" alt="sponsors image" class="spimage")
+          img(src="/static/img/logo2.webp" alt="sponsors image" class="spimage")
+          img(src="/static/img/logo3.webp" alt="sponsors image" class="spimage")
+          img(src="/static/img/logo4.webp" alt="sponsors image" class="spimage")       
